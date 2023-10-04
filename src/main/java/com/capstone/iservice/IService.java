@@ -18,10 +18,10 @@ public interface IService {
 	
 	//Leader methods
 	User findByEmail(String email);
-	void createIdea();
-	void updateIdea();
-	void deleteIdea();
-	void addImplementaion();
+//	void createIdea();
+//	void updateIdea();
+//	void deleteIdea();
+//	void addImplementaion();
 	
 	//Team members methods- can only update password no other method
 	

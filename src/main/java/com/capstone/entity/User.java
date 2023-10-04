@@ -43,6 +43,29 @@ public class User {
 
 	@OneToMany(mappedBy = "Users", cascade = CascadeType.ALL, orphanRemoval = true)
 	private Set<RegUsers> userIdeaMappings = new HashSet<>();
+	
+
+	public int getuId() {
+		return uId;
+	}
+
+	public void setuId(int uId) {
+		this.uId = uId;
+	}
+
+	public void setPanelist(Panel panelist) {
+		this.panelist = panelist;
+	}
+
+	public void setRole(Role role) {
+		this.role = role;
+	}
+
+	@Override
+	public String toString() {
+		return "User [uId=" + uId + ", name=" + name + ", email=" + email + ", password=" + password + ", phone="
+				+ phone + ", role=" + role + "]";
+	}
 
 	public Role getRoleId() {
 		return role;
@@ -105,5 +128,6 @@ public class User {
 	public void setPhone(int phone) {
 		this.phone = phone;
 	}
+
 
 }
